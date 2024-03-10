@@ -16,12 +16,12 @@ Klærne er formen og fargene som vi har, og det er CSS som styrer dette.
 
 Muskler og hjerne er det som gir oss evne til å gjøre ting og ha en oppførsel, dette er JavaScript. 
 
-[Hvordan komme i gang](./nettsider-101/intro)
+[Hvordan komme i gang]({{site.baseurl}}/intro)
 
-[HTML - Skjellett](./nettsider-101/html)
+[HTML - Skjellett]({{site.baseurl}}/html)
 
-[CSS - Klær](./nettsider-101/css)
+[CSS - Klær]({{site.baseurl}}/css)
 
-[JavaScript - Muskler og hjerne](./nettsider-101/javascript)
+[JavaScript - Muskler og hjerne]({{site.baseurl}}/javascript)
 
-[Eksempler](./nettsider-101/eksempler)
+[Eksempler]({{site.baseurl}}/eksempler)
