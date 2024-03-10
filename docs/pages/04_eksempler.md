@@ -8,4 +8,4 @@ permalink: /eksempler/
 
 Her har vi samlet noen eksempler på hvordan man kan løse disse oppgavene
 
-[Tic-tac-toe](/eksempler/tic-tac-toe)
+[Tic-tac-toe]({{site.baseurl}}/eksempler/tic-tac-toe)

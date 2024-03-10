@@ -24,10 +24,10 @@ Innholdet finner vi mellom disse 2 taggene: `Hei på deg!`.
 Det går an å nøste disse taggene, for å lage mer kompliserte strukturer:
 ```html
 <div>
-    Jeg er det ytterste elementet.
-    <div>
-        Mens jeg er det innerste elementet.
-    </div>
+  Jeg er det ytterste elementet.
+  <div>
+    Mens jeg er det innerste elementet.
+  </div>
 </div>
 ```
 Merk at vi må alltid lukke taggene våre. Det er god kutyme å bruke indentering når vi skriver HTML-dokumentet,
@@ -37,10 +37,10 @@ uten at det påvirker hvordan nettsiden ender opp med å se ut - så man bruker 
 Vi bør alltid starte HTML-dokumentet vårt med en `<html>`-tag, som omfatter hele siden:
 ```html
 <html>
-    <div>
-        Her kommer innholdet.
-    </div>
-    Men innholdet trenger ikke være i en div-tag
+  <div>
+    Her kommer innholdet.
+  </div>
+  Men innholdet trenger ikke være i en div-tag
 </html>
 ```
 
@@ -86,11 +86,11 @@ Brukes slik:
 <div>
   <p>Denne paragrafen er synlig</p>
   <!-- <p>Denne paragrafen er synlig</p> -->
-  
+
   <!-- Et eksempel på hvordan du bruker linjeskift: -->
   Her har vi en hel del tekst.
-  Men selv om vi bruker linjeskift i teksten, 
-  så kommer ikke det frem på nettsiden, 
+  Men selv om vi bruker linjeskift i teksten,
+  så kommer ikke det frem på nettsiden,
   det blir bare en lang linje.
   <br>
   Med mindre vi legger til et linjeskift!
@@ -379,10 +379,10 @@ Dette forutsetter at i samme mappe (lokalt på din maskin), så ligger det en bi
 ---
 
 ### Oppsummering:
-- HTML-sider har en struktur, som består av tagger og tekst.
-- Disse taggene angir hvilket type innhold og hvilken struktur siden skal ha.
+- HTML-sider har en struktur, som består av tagger og tekst
+- Disse taggene angir hvilket type innhold og hvilken struktur siden skal ha
 - Det finnes et mangfold av ulike typer elementer
-- Vi kan bruke attributter på elementene for å gi de litt mer avansert funksjonalitet
+- Man kan bruke attributter på elementene for å gi de litt mer avansert funksjonalitet
 
 ### Videre:
 Det finnes veldig mye mer man kan gjøre i ren HTML, og veldig mange andre elementer og attributter vi ikke har snakket om.

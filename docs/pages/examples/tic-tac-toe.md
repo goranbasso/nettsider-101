@@ -13,6 +13,9 @@ Det er ikke det peneste spillet i verden - kan du gjøre det penere?
 
 I tillegg har vi 2 `<input>`-felter som ikke gjør noe - kan du gjøre slik at navnet til spilleren blir vist når spillet er over?
 
+**Utfordring:** Kan du gjøre slik at brettet er større enn 3x3, at spilleren selv kan skrive inn hvor stor han vil ha den, 9x9 for eksempel?
+(Dette vil kreve en stor omskriving av hele spillet, og vil være veldig utfordrende!)
+
 ```html
 <!DOCTYPE html>
 <html>

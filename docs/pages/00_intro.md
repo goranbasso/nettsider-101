@@ -8,7 +8,7 @@ permalink: /intro/
 
 Hva er en nettside?
 
-En nettside er en side man kan åpne med en nettleser (Chrome, Firefox, Safari, etc), og som har noe innehold.
+En nettside er en side man kan åpne med en nettleser (Chrome, Firefox, Safari, etc), og som har noe innhold.
 Dette innholdet kan være alt fra tekst, til lenker, bilder, video, skjema, spill, etc - alt man noen gang har funnet på internett.
 
 Disse nettsidene kan man gjerne nå gjennom å gå til en spesifikk adresse - for eksempel: [www.nrk.no](https://www.nrk.no)
@@ -38,7 +38,7 @@ Det finnes også verktøy på internett som gir oss disse tingene gratis, som Co
 
 I kontekst av denne workshopen, så anbefaler vi å bruke disse verktøyene som finnes på nettet, eksempelvis CodePen, 
 da de krever minimalt av oppsett, samtidig som de er ganske gode verktøy for å redigere, 
-og gir også ofte en visning av hvordan nettsiden ser ut fortløpende.
+og gir også en visning av hvordan nettsiden ser ut mens man jobber på den.
 
 - Nettlesere:
   - Chrome, Firefox, Safari, Edge, etc
