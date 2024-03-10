@@ -104,6 +104,8 @@ Brukes slik:
   - Det er veldig viktig at man er *eksakt*, og skriver taggene nøyaktig slik de er definert. Husk også å lukke de! 
   - `<div>`-taggen er en generisk tag for å samle innhold, og kan være nyttig for å dele opp innholdet på en fornuftig måte.
 
+---
+
 ### Avanserte elementer:
 
 #### Lister:
@@ -135,6 +137,8 @@ Vi kan også ha nummererte lister, dersom rekkefølgen er viktig, med `<ol>`- og
 #### Oppgave 2:
 - Lag noen lister på nettsiden din, både med og uten nummerering.
 -- Ikke glem å være nøye med indenteringen! Det gjør ting mer lesbart
+
+---
 
 #### Tabeller:
 
@@ -209,6 +213,8 @@ Dette blir fort veldig avansert, så det er viktig at man bruker indentering, fo
   - Vær obs på strukturen! Det er et samspill mellom `<table>`, `<thead`, `<tbody>`, `<tr>`, `<th>`, og `<td>` - 
   så det kan lett gå i surr, og det er viktig at man lukker de riktig.
 
+---
+
 #### Input:
 
 Nettsider lar oss gjerne gjøre litt mer enn å bare se på innhold, for eksempel kan man legge til en kommentar, eller logge inn.
@@ -255,6 +261,8 @@ Vi kan bruke `<button>`-elementet for å lage knapper på nettsiden vår:
 #### Oppgave 4:
 - Legg til noen tekstfelt og knapper til nettsiden din
   - Vi kommer seinere til å gå inn på hvordan vi kan få disse til å både se litt bedre ut, og ha faktisk oppførsel, i CSS- og JavaScript-delene
+
+---
 
 ### Attributter:
 
@@ -313,6 +321,8 @@ for eksempel om vi ønsker å begrense hvor mange tegn brukeren skal kunne skriv
 - Bruk attributter for å legge til noen mer avanserte `<input>`-elementer på nettsiden din
   - Det finnes mange flere attributter for `<input>`: `color`, `date`, `search`, `radio`, `file` - gjerne utforsk disse
 
+---
+
 Attributter er svært viktige for lenker, for eksempel, da det er der vi angir hvilken adresse lenken skal peke på.
 Lenker defineres med `<a>`-taggen i HTML, og må ta en `href`-attributt.
 ```html
@@ -333,6 +343,8 @@ I denne workshopen skal vi bare fokusere på én enkel nettside, uten lenker til
 #### Oppgave 6:
 - Legg til noen lenker til forskjellige nettsider inne på siden din
   - Merk at på CodePen får man ofte ikke åpne disse sidene, med mindre man åpner de i en ny fane
+
+---
 
 Et annet element som er veldig avhengig av attributter, er `<img>`-taggen, som lar oss legge til bilder på nettsiden.
 
@@ -363,6 +375,8 @@ Dette forutsetter at i samme mappe (lokalt på din maskin), så ligger det en bi
   - Du kan finne et bilde på nett, og enten legge til adressen direkte til bildet - men det er ikke alltid man får lov
   - Kan også laste ned et bilde lokalt, og vise til stien direkte (men forutsetter at man ikke bruker CodePen)
   - Det finnes noen sider som lar deg hente slikte bilder gratis: [https://picsum.photos](https://picsum.photos), [https://placekitten.com/](https://placekitten.com/)
+
+---
 
 ### Oppsummering:
 - HTML-sider har en struktur, som består av tagger og tekst.
