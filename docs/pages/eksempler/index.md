@@ -2,6 +2,7 @@
 layout: page
 title: Eksempler
 permalink: /eksempler/
+# exclude: true
 ---
 
 # Noen eksempler på hvordan man gjør disse tingene
