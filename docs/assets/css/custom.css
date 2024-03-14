@@ -1,0 +1,21 @@
+aside {
+  position: relative;
+  max-width: 400px;
+  padding: 1.25rem 1rem 1rem;
+  float: right;
+  background-color: #f4f4f4;
+  margin: 1rem 0 1rem 1rem;
+}
+
+aside::before {
+  position: absolute;
+  display: block;
+  top: -1rem;
+  left: 0;
+  content: "Nyttig info";
+  font-weight: bolder;
+  font-family: monospace;
+  text-transform: uppercase;
+  background-color: #f4f4f4;
+  padding: 0.25rem 1rem 0;
+}
