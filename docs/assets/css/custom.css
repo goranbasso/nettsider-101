@@ -7,6 +7,12 @@ aside {
   margin: 1rem 0 1rem 1rem;
 }
 
+aside::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 aside::before {
   position: absolute;
   display: block;
