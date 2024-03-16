@@ -182,23 +182,24 @@ ingen effekt fordi vi gir en "størrelses-verdi" til en egenskap som forventer e
 ##### Farge
 
 Farger er oftest representert i heksadesimale verdier (hex), RGB (andel **R**ød,
-**G**rønn og **B**lå), HSL(**H**ue, **S**aturation, **L**ightness) eller kodeord
-som f.eks "black", "pink", "papayawhip" (ja, det er faktisk en gyldig
-fargeverdi).
+**G**rønn og **B**lå), HSL (**H**ue, **S**aturation, **L**ightness) eller
+kodeord som f.eks `black`, `hotpink` og `papayawhip` (ja, det er faktisk en
+gyldig fargeverdi).
 
 ```css
 /* Alle fargeverdiene her er like */
 .color-me-red {
   color: #ff0000; /* hex */
-  color: rgb(255, 0, 0)
-  color: hsl(0, 100%, 50%)
+  color: rgb(255, 0, 0);
+  color: hsl(0, 100%, 50%);
   color: red;
 }
 ```
 
 [Det finnes mange flere måter ](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
 å definere farger på, alle med sine fordeler og ulemper. For enkelhets skyld
-holder vi oss til kodeord ("red", "green") og hex-verdier i dette kurset.
+holder vi oss til kodeord ("red", "green") og hex-verdier i dette kurset, men du
+står selvfølgelig fritt til å teste ut det andre metodene 🎨
 
 ##### Størrelse
 
@@ -221,8 +222,8 @@ Blant disse verdiene er prosent, `rem`, `vw`, `vh` mye brukt.
 
 `vw` og `vh` er størrelser som er relative til bredden og høyden til
 nettleser-vinduet (på engelsk "viewport") og kan ha en verdi fra 0 til 100.
-`50vw` kan leses som "50% of viewport width", eller på godt norsk "halvparten av
-bredden til nettleseren"
+`50vw` kan eksempelvis leses som "50% of viewport width", eller på godt norsk
+"halvparten av bredden til nettleservinduet"
 
 ##### Nøkkelord
 
@@ -240,14 +241,21 @@ egenskapen definerer hvordan et element og eventuelle underelementer (barn) skal
 posisjonere seg i "flyten" av innhold på en nettside. Dersom vi
 [ser på dokumentasjonen på MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 kan vi lese at `display` støtter mange forskjellige nøkkelord som `block`,
-`inline` `none`, `flex` og `grid`. Vi skal ikke gå i detalj på hva alle allle
+`inline`, `none`, `flex` og `grid`. Vi skal ikke gå i detalj på hva alle allle
 mulige nøkkelord betyr, men en forenklet forklaring av de nevnte verdiene kan
 være:
 
-- `block`: elementet er en "blokk" som tar full bredde (mange elementer har
-  dette som standard f.eks `<div>`, `<p>`, `<section>`, `<article>` osv.)
+- `block`: elementet er en "blokk" som tar full bredde dersom ingen bredde
+  (`width`) er definert. Et `block`-element havner som regel på en egen linje,
+  dvs. at man i utgangspunktet ikke kan ha to `block`-elementer ved siden av
+  hverandre, men det finnes måter å endre dette på. Vi kan kontrollere høyden på
+  `block`-elementer ved å bruke egenskaper som `height`, `max-height` og
+  `min-height`. Mange elementer har `display: block;` som standard f.eks
+  `<div>`, `<p>`, `<section>`. `<article>` osv.
 - `inline`: elementet kan stilles på linje og tar bare opp bredden til innholdet
-  (godt egnet til å putte inn i tekst)
+  (godt egnet til å putte inn i tekst). Vi kan ikke kontrollere høyden på
+  `inline`-elementer slik som vi kan med `block`-elementer. `<span>`-elementet
+  er et eksempel på et element som har `display: inline;` som standard.
 - `none`: elementet er ikke synlig (det er overraskende ofte vi trenger å gjemme
   elementer med CSS)
 - `flex`: elementet oppfører seg som `block` men alle barn følger en layout som
@@ -322,23 +330,108 @@ p.kjeks.potet[title] {
 }
 ```
 
-- spesifistets-vekt av selektorer
-- kombinasjon av selektorer
-- !important
-- order matters
-- regler arves
-
 ### Boksmodellen, flyt og layout
 
 En ting man ofte jobber mye med i CSS er størrelsen på elementer og hvordan de
 posisjonerer seg i forhold til hverandre. I denne seksjonen skal vi snakke om
 noen av konseptene som er nyttige å forstå for å kontrollere dette.
 
-- Boksmodellen
-- Position
-- Float
-- Flexbox
-- Grid
+#### Boksmodellen
+
+Hvert element i HTML kan sees på som en boks. Denne boksen har forskjellige
+CSS-egenskaper som sammen utgjør størrelsen til boksen. I CSS blir dette ofte
+omtalt som boksmodellen (box model).
+
+<!-- <p class="center-content"> -->
+  <img src="/assets/img/boxmodel.png" alt="Bildet viser boksmodellen i css" />
+<!-- </p> -->
+
+<aside>
+<div>
+  Egenskapene <code>margin</code> og <code>padding</code> kan settes for alle
+  sidene samtidig, og følger da rekkefølgen "topp", "høyre", "bunn" og "venstre":
+</div>
+<br />
+<div>
+<code>margin: 10px 2px 5px 8px</code>
+</div>
+<br />
+<div>
+  betyr henholdsvis: 10px luft over, 2px luft til høyre, 5px luft under og 8px
+  luft til venstre for elementet. Men man kan også sette verdiene for én side om
+  gangen ved å bruke <code>margin-top</code>, <code>margin-right</code>,
+  <code>margin-bottom</code> og <code>margin-left</code>.
+</div>
+
+</aside>
+
+- I midten finner vi innholdet (content), som kan være tekst eller andre
+  elementer
+- Utenfor innholdet har vi `padding` som er luften mellom innholdet og kanten på
+  boksen.
+- Kanten på boksen (`border`) kan enten være usynlig eller ha en definert
+  tykkelse, stil og farge (f.eks `border: 4px solid green;`)
+- Utenfor boksen har vi enda en egenskap som styrer mellomrommet til andre
+  elementer. Denne egenskapen kalles `margin`.
+
+Kombinasjonen av innholdet i boksen og de nevnte egenskapene bestemmer boksen
+sin naturlige størrelse. Men vi har også mulighet til overstyre den naturlige
+størrelsen ved å sette størrelses-verdier på egenskapene `width` og `height`. Vi
+kan også kontrollere minimum- og maksimumsstørrelser med
+`min-width`/`min-height` og `max-width`/`max-height`, det vil si at elementet
+ikke kan bli mindre eller større enn disse verdiene.
+
+En ting som er viktig å vite om `height` og `width` er at vi kan kontrollere
+hvordan nettleseren gjør denne beregningen ved å sette egenskapen `box-sizing`.
+Den kan ha 2 verdier
+
+- `box-sizing: content-box`: høyde/bredde er bare beregnet utifra størrelsen til
+  innholdet. `padding` og `border` blir ikke tatt med i beregningen.
+- `box-sizing: border-box`: høyde/bredde er kombinasjonen av innholdet,
+  `padding` og `border`.
+
+Merkelig nok er standarden for alle nettlesere å sette
+`box-sizing: content-box`. Dette er ganske forrvirrende, det blir som å si at
+dersom man får en pakke i posten, så er størrelsen på pakken kun det som er inni
+pakken. Og som vi vet, stemmer dette sjeldent.
+
+<img src="/assets/img/bigbox.png" alt="Stor eske, lite innhold" style="max-width: 500px" />
+
+Det er derfor vanlig at man i begynnelsen av stilarket setter
+
+```css
+* {
+  box-sizing: border-box;
+}
+```
+
+For endre `box-sizing` for alle elementer på nettsiden.
+
+Eksempelet under viser hvordan ting kan endre seg når man endrer på forskjellige
+`box-sizing`-verdier.
+
+{% include codepen-embed.html slug="BaEQWWR" height="900" default_tab="result" %}
+
+---
+
+#### Oppgave
+
+_Se om du klarer å få det indre elementet (blå boks med klassen `child`) til å
+bli like stort som det ytre elementet ved å endre egenskapene som påvirker høyde
+og bredde_
+
+- Vi har satt `box-sizing: border-box;` for alle elementer i eksempelet
+- Trykk på knappen som sier "Sjekk størrelsen til barnet" etter du har gjort en
+  endring for å se hvilke størrelse "barnet" faktisk har (høyde x bredde)
+
+{% include codepen-embed.html slug="ExJNxqG" height="700" %}
+
+---
+
+- Position?
+- Float?
+- Flexbox?
+- Grid?
 
 ## Ressurser
 

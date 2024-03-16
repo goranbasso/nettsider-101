@@ -25,3 +25,8 @@ aside::before {
   background-color: #f4f4f4;
   padding: 0.25rem 1rem 0;
 }
+
+.center-content {
+  display: grid;
+  place-items: center;
+}
