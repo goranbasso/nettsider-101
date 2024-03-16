@@ -118,14 +118,18 @@ Brukes slik:
 
 ---
 
-#### Oppgave 1 {#oppgave-1}
-
-_Lag en enkel nettside, med disse forskjellige elementene over, som har noe tekstlig innhold og en tittel._
-
-- Forsøk å bruke alle de forskjellige elementene, for å se hvordan de endrer på teksten du legger til.
-- Hva skjer når du endrer på måten ting er nøstet på?
-- Det er veldig viktig at man er _eksakt_, og skriver taggene nøyaktig slik de er definert. Husk også å lukke de!
-- `<div>`-taggen er en generisk tag for å samle innhold, og kan være nyttig for å dele opp innholdet på en fornuftig måte.
+<article class="oppgave">
+    <h4 id="oppgave-1">Oppgave 1</h4>
+    
+    <p><em>Lag en enkel nettside, med disse forskjellige elementene over, som har noe tekstlig innhold og en tittel.</em></p>
+    
+    <ul>
+      <li>Forsøk å bruke alle de forskjellige elementene, for å se hvordan de endrer på teksten du legger til.</li>
+      <li>Hva skjer når du endrer på måten ting er nøstet på?</li>
+      <li>Det er veldig viktig at man er <em>eksakt</em>, og skriver taggene nøyaktig slik de er definert. Husk også å lukke de!</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>-taggen er en generisk tag for å samle innhold, og kan være nyttig for å dele opp innholdet på en fornuftig måte.</li>
+    </ul>
+</article>
 
 ---
 
@@ -161,11 +165,15 @@ Vi kan også ha nummererte lister, dersom rekkefølgen er viktig, med `<ol>`- og
 
 ---
 
-#### Oppgave 2 {#oppgave-2}
-
-_Lag noen lister på nettsiden din, både med og uten nummerering._
-
-- Ikke glem å være nøye med indenteringen! Det gjør ting mer lesbart
+<article class="oppgave">
+    <h4 id="oppgave-2">Oppgave 2</h4>
+    
+    <p><em>Lag noen lister på nettsiden din, både med og uten nummerering.</em></p>
+    
+    <ul>
+      <li>Ikke glem å være nøye med indenteringen! Det gjør ting mer lesbart</li>
+    </ul>
+</article>
 
 ---
 
@@ -244,11 +252,15 @@ vi legger den til her for å gjøre tabellen vår litt mer synlig.
 
 ---
 
-#### Oppgave 3 {#oppgave-3}
-
-_Legg til en enkel tabell på nettsiden din_
-
-- Vær obs på strukturen! Det er et samspill mellom `<table>`, `<thead`, `<tbody>`, `<tr>`, `<th>`, og `<td>` - så det kan lett gå i surr, og det er viktig at man lukker de riktig.
+<article class="oppgave">
+    <h4 id="oppgave-3">Oppgave 3</h4>
+    
+    <p><em>Legg til en enkel tabell på nettsiden din</em></p>
+    
+    <ul>
+      <li>Vær obs på strukturen! Det er et samspill mellom <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;thead</code>, <code class="language-plaintext highlighter-rouge">&lt;tbody&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;th&gt;</code>, og <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> - så det kan lett gå i surr, og det er viktig at man lukker de riktig.</li>
+    </ul>
+</article>
 
 ---
 
@@ -297,11 +309,15 @@ Vi kan bruke `<button>`-elementet for å lage knapper på nettsiden vår:
 
 ---
 
-#### Oppgave 4 {#oppgave-4}
-
-_Legg til noen tekstfelt og knapper til nettsiden din_
-
-- Vi kommer seinere til å gå inn på hvordan vi kan få disse til å både se litt bedre ut, og ha faktisk oppførsel, i CSS- og JavaScript-delene
+<article class="oppgave">
+    <h4 id="oppgave-4">Oppgave 4</h4>
+    
+    <p><em>Legg til noen tekstfelt og knapper til nettsiden din</em></p>
+    
+    <ul>
+      <li>Vi kommer seinere til å gå inn på hvordan vi kan få disse til å både se litt bedre ut, og ha faktisk oppførsel, i CSS- og JavaScript-delene</li>
+    </ul>
+</article>
 
 ---
 
@@ -366,11 +382,15 @@ for eksempel om vi ønsker å begrense hvor mange tegn brukeren skal kunne skriv
 
 ---
 
-#### Oppgave 5 {#oppgave-5}
-
-_Bruk attributter for å legge til noen mer avanserte `<input>`-elementer på nettsiden din_
-
-- Det finnes mange gyldige `type`-attributter for `<input>` som f.eks `color`, `date`, `search`, `radio`, `file` - Eksperimenter gjerne med disse, og legg merke til hvor mye form og funksjon blir påvirket av å endre dette attributtet
+<article class="oppgave">
+    <h4 id="oppgave-5">Oppgave 5</h4>
+    
+    <p><em>Bruk attributter for å legge til noen mer avanserte <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code>-elementer på nettsiden din</em></p>
+    
+    <ul>
+      <li>Det finnes mange gyldige <code class="language-plaintext highlighter-rouge">type</code>-attributter for <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> som f.eks <code class="language-plaintext highlighter-rouge">color</code>, <code class="language-plaintext highlighter-rouge">date</code>, <code class="language-plaintext highlighter-rouge">search</code>, <code class="language-plaintext highlighter-rouge">radio</code>, <code class="language-plaintext highlighter-rouge">file</code> - Eksperimenter gjerne med disse, og legg merke til hvor mye form og funksjon blir påvirket av å endre dette attributtet</li>
+    </ul>
+</article>
 
 ---
 
@@ -394,11 +414,15 @@ I denne workshopen skal vi bare fokusere på én enkel nettside, uten lenker til
 
 ---
 
-#### Oppgave 6 {#oppgave-6}
-
-_Legg til noen lenker til forskjellige nettsider inne på siden din_
-
-- Merk at på CodePen får man ofte ikke åpne disse sidene, med mindre man åpner de i en ny fane
+<article class="oppgave">
+    <h4 id="oppgave-6">Oppgave 6</h4>
+    
+    <p><em>Legg til noen lenker til forskjellige nettsider inne på siden din</em></p>
+    
+    <ul>
+      <li>Merk at på CodePen får man ofte ikke åpne disse sidene, med mindre man åpner de i en ny fane</li>
+    </ul>
+</article>
 
 ---
 
@@ -431,13 +455,17 @@ Dette forutsetter at i samme mappe (lokalt på din maskin), så ligger det en bi
 
 ---
 
-#### Oppgave 7 {#oppgave-7}
-
-_Legg til et bilde på nettsiden din_
-
-- Du kan finne et bilde på nett, og enten legge til adressen direkte til bildet - men det er ikke alltid man får lov
-- Kan også laste ned et bilde lokalt, og vise til stien direkte (men forutsetter at man ikke bruker CodePen)
-- Det finnes noen sider som lar deg hente slikte bilder gratis: [https://picsum.photos](https://picsum.photos), [https://placekitten.com/](https://placekitten.com/)
+<article class="oppgave">
+    <h4 id="oppgave-7">Oppgave 7</h4>
+    
+    <p><em>Legg til et bilde på nettsiden din</em></p>
+    
+    <ul>
+      <li>Du kan finne et bilde på nett, og enten legge til adressen direkte til bildet - men det er ikke alltid man får lov</li>
+      <li>Kan også laste ned et bilde lokalt, og vise til stien direkte (men forutsetter at man ikke bruker CodePen)</li>
+      <li>Det finnes noen sider som lar deg hente slikte bilder gratis: <a href="https://picsum.photos">https://picsum.photos</a>, <a href="https://placekitten.com/">https://placekitten.com/</a></li>
+    </ul>
+</article>
 
 ---
 

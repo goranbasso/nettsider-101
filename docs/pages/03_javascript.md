@@ -82,13 +82,17 @@ Vi kunne gjort: `console.log(100 + 200);` direkte i konsollen, for eksempel.
 
 ---
 
-#### Oppgave 1 {#oppgave-1}
-
-_Bruk konsollen til å gjøre noen enkle utregninger_
-
-- Bruk `console.log()`, og gjør `+`, `-`, `*`, `/`
-- Prøv å opprett noen variabler (`let someName = 100;`), og logg disse
-- Prøv å bruk variablene i utregningene, og overskriv de
+<article class="oppgave">
+  <h4 id="oppgave-1">Oppgave 1</h4>
+  
+  <p><em>Bruk konsollen til å gjøre noen enkle utregninger</em></p>
+  
+  <ul>
+    <li>Bruk <code class="language-plaintext highlighter-rouge">console.log()</code>, og gjør <code class="language-plaintext highlighter-rouge">+</code>, <code class="language-plaintext highlighter-rouge">-</code>, <code class="language-plaintext highlighter-rouge">*</code>, <code class="language-plaintext highlighter-rouge">/</code></li>
+    <li>Prøv å opprett noen variabler (<code class="language-plaintext highlighter-rouge">let someName = 100;</code>), og logg disse</li>
+    <li>Prøv å bruk variablene i utregningene, og overskriv de</li>
+  </ul>
+</article>
 
 ---
 
@@ -138,11 +142,15 @@ Denne koden vil kjøre med en gang vi åpner nettsiden vår (eller når vi refre
 
 ---
 
-#### Oppgave 2 {#oppgave-2}
-
-_Print noe til konsollen når man går inn på nettsiden_
-
-- Enten ved å ha det i en `<script>`-tag, eller ved å referere til en fil som er lokalt, eller ved å ha det i JS-fanen i CodePen
+<article class="oppgave">
+  <h4 id="oppgave-2">Oppgave 2</h4>
+  
+  <p><em>Print noe til konsollen når man går inn på nettsiden</em></p>
+  
+  <ul>
+    <li>Enten ved å ha det i en <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code>-tag, eller ved å referere til en fil som er lokalt, eller ved å ha det i JS-fanen i CodePen</li>
+  </ul>
+</article>
 
 ---
 
@@ -244,12 +252,16 @@ Vi definerte en funksjon, `printPlayerNames()`, og så sa vi at når knappen bli
 
 ---
 
-#### Oppgave 3 {#oppgave-3}
-
-_Lag et `<input>`-element hvor man kan skrive inn noe, og vis denne verdien en helt annen plass på nettsiden når man trykker på en knapp_
-
-- Her må du kombinere de 2 eksemplene over, slik at vi endrer HTML'en et helt annet sted basert på denne knappen
-- `id`-attributtet vil være svært nyttig!
+<article class="oppgave">
+  <h4 id="oppgave-3">Oppgave 3</h4>
+  
+  <p><em>Lag et <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code>-element hvor man kan skrive inn noe, og vis denne verdien en helt annen plass på nettsiden når man trykker på en knapp</em></p>
+  
+  <ul>
+    <li>Her må du kombinere de 2 eksemplene over, slik at vi endrer HTML’en et helt annet sted basert på denne knappen</li>
+    <li><code class="language-plaintext highlighter-rouge">id</code>-attributtet vil være svært nyttig!</li>
+  </ul>
+</article>
 
 ---
 
@@ -343,51 +355,56 @@ Ved hjelp av denne, kan vi sette opp logikk for å styre hva koden vår skal gj�
 
 ---
 
-#### Oppgave 4 {#oppgave-4}
+<article class="oppgave">
+  <h4 id="oppgave-4">Oppgave 4</h4>
+  
+  <p><em>Ved å bruke det du har lært hittil, kan du lage en enkel nettside der man prøver å gjette hvilket tall datamaskinen tenker på?</em></p>
+  
+  <ul>
+    <li>La nettsiden gi beskjed om tallet man gjettet var lavere, høyere, eller like stort som det maskinen valgte</li>
+    <li>La datamaskinen velge et tall (ved hjelp av funksjonen under), og la brukeren angi sitt til i et <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code>-element</li>
+    <li>Så kan man ha en knapp for å gjøre selve sjekken - la beskjeden komme frem på selve nettsiden, og ikke bare logg den i konsollen</li>
+    <li>En enkel hjelpefunksjon, som gir et tilfeldig tall mellom 1 og 6 (som å rulle en terning):</li>
+  </ul>
+  
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">rollDice</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">randomNumber</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">// litt hokus pokus</span>
+    <span class="k">return</span> <span class="nx">randomNumber</span><span class="p">;</span>
+  <span class="p">}</span>
+  </code></pre></div></div>
+  
+  <p>Eksempel på hvordan du bruker denne funksjonen:</p>
+  
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">diceRoll</span> <span class="o">=</span> <span class="nx">rollDice</span><span class="p">();</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">rullet en terning, og fikk: </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">diceRoll</span><span class="p">);</span>
+  </code></pre></div></div>
+  
+  <p>Merk at siden vi i <code class="language-plaintext highlighter-rouge">rollDice()</code>-funksjonen sier <code class="language-plaintext highlighter-rouge">return randomNumber</code>, så betyr det at funksjonen gir fra seg verdien som er i
+  <code class="language-plaintext highlighter-rouge">randomNumber</code>, og på den måten kan vi ta verdien rett i en variabel (<code class="language-plaintext highlighter-rouge">diceRoll</code> i eksemplet over).</p>
+</article>
 
-_Ved å bruke det du har lært hittil, kan du lage en enkel nettside der man prøver å gjette hvilket tall datamaskinen tenker på?_
-
-- La nettsiden gi beskjed om tallet man gjettet var lavere, høyere, eller like stort som det maskinen valgte
-- La datamaskinen velge et tall (ved hjelp av funksjonen under), og la brukeren angi sitt til i et `<input>`-element
-- Så kan man ha en knapp for å gjøre selve sjekken - la beskjeden komme frem på selve nettsiden, og ikke bare logg den i konsollen
-- En enkel hjelpefunksjon, som gir et tilfeldig tall mellom 1 og 6 (som å rulle en terning):
-
-```javascript
-function rollDice() {
-  let randomNumber = Math.floor(Math.random() * 6 + 1); // litt hokus pokus
-  return randomNumber;
-}
-```
-
-Eksempel på hvordan du bruker denne funksjonen:
-
-```javascript
-let diceRoll = rollDice();
-console.log("rullet en terning, og fikk: " + diceRoll);
-```
-
-Merk at siden vi i `rollDice()`-funksjonen sier `return randomNumber`, så betyr det at funksjonen gir fra seg verdien som er i
-`randomNumber`, og på den måten kan vi ta verdien rett i en variabel (`diceRoll` i eksemplet over).
-
-#### Oppgave 5 {#oppgave-5}
-
-_Ved å bruke det du har lært hittil, kan du lage en enkel nettside hvor man kan spille stein-saks-papir mot datamaskinen?_
-
-- Det blir fort mange `if`-setninger her, så holdt tungen beint i munnen - kan man forenkle dette?
-- En enkel hjelpefunksjon, sånn at datamaskinen tilfeldig velger stein, saks, eller papir:
-
-```javascript
-function rockPaperOrScissors() {
-  let randomNumber = Math.floor((Math.random() * 10) % 3); // litt hokus pokus
-  if (randomNumber === 0) {
-    return "stein";
-  } else if (randomNumber === 1) {
-    return "saks";
-  } else {
-    return "papir";
-  }
-}
-```
+<article class="oppgave">
+  <h4 id="oppgave-5">Oppgave 5</h4>
+  
+  <p><em>Ved å bruke det du har lært hittil, kan du lage en enkel nettside hvor man kan spille stein-saks-papir mot datamaskinen?</em></p>
+  
+  <ul>
+    <li>Det blir fort mange <code class="language-plaintext highlighter-rouge">if</code>-setninger her, så holdt tungen beint i munnen - kan man forenkle dette?</li>
+    <li>En enkel hjelpefunksjon, sånn at datamaskinen tilfeldig velger stein, saks, eller papir:</li>
+  </ul>
+  
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">rockPaperOrScissors</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">randomNumber</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span> <span class="o">%</span> <span class="mi">3</span><span class="p">);</span> <span class="c1">// litt hokus pokus</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">randomNumber</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="dl">"</span><span class="s2">stein</span><span class="dl">"</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">randomNumber</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="dl">"</span><span class="s2">saks</span><span class="dl">"</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="dl">"</span><span class="s2">papir</span><span class="dl">"</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  </code></pre></div></div>
+</article>
 
 ---
 
@@ -523,14 +540,18 @@ Merk at det er lett å havne i en uendelig løkke her! Hvorfor skjer det?
 
 ---
 
-#### Oppgave 6 {#oppgave-6}
-
-Det finnes en spesiell type man kan sette på `<input>`: `<input type="color">`. Dette gjør `<input>`-elementet om til en farge-velger.
-
-_Skriv om koden over, slik at man selv kan velge nøyaktig hvilken farge `div`-ene skal få, ved å hente ut denne verdien fra `<input>`-elementet_
-
-- **Tips**: Man kan hente ut verdien via `.value`, på samme måte som vi gjorde når vi printet navnene til spillerne tidligere.
-- **Tips**: Hvilken verdi er det som ligger inni `.value`? Print denne ut for å se hvordan det ser ut.
+<article class="oppgave">
+  <h4 id="oppgave-6">Oppgave 6</h4>
+  
+  <p>Det finnes en spesiell type man kan sette på <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code>: <code class="language-plaintext highlighter-rouge">&lt;input type="color"&gt;</code>. Dette gjør <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code>-elementet om til en farge-velger.</p>
+  
+  <p><em>Skriv om koden over, slik at man selv kan velge nøyaktig hvilken farge <code class="language-plaintext highlighter-rouge">div</code>-ene skal få, ved å hente ut denne verdien fra <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code>-elementet</em></p>
+  
+  <ul>
+    <li><strong>Tips</strong>: Man kan hente ut verdien via <code class="language-plaintext highlighter-rouge">.value</code>, på samme måte som vi gjorde når vi printet navnene til spillerne tidligere.</li>
+    <li><strong>Tips</strong>: Hvilken verdi er det som ligger inni <code class="language-plaintext highlighter-rouge">.value</code>? Print denne ut for å se hvordan det ser ut.</li>
+  </ul>
+</article>
 
 ---
 
@@ -547,7 +568,7 @@ Noen forslag på mer avanserte oppgaver du kan bryne deg på, som ikke er i noen
   - Tabellen bør ha flere kolonner, med forskjellige verdier inni seg
 - Lag en **profil-side**, der brukere kan legge inn tekst om seg selv, bilder, og velge mellom flere farger
 - **Hva som helst**, så lenge du bruker både HTML, CSS, og JavaScript sammen
-- Finn en måte å hoste en nettside på, slik at den blir tilgjengelig for andre
+- Finn en måte å **hoste en nettside** på, slik at den blir tilgjengelig for andre - her finnes det mange gratis tjenester som tilbyr dette
 
 Et eksempel på en nettside som bruker HTML, CSS, og JavaScript sammen:
 [Tic-tac-toe]({{site.baseurl}}/eksempler/tic-tac-toe)

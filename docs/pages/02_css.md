@@ -115,13 +115,17 @@ en HTML-side.
 
 ---
 
-#### Oppgave 1 {#oppgave-1}
-
-_Lek litt rundt med de forskjellige egenskapene og verdiene i eksemplet over -
-klarer du å få den til å bli rød, hvit, og blå?_
-
-- Merk: `color` endrer fargen på _teksten_, mens `background` endrer fargen på
-  bakgrunnen
+<article class="oppgave">
+  <h4 id="oppgave-1">Oppgave 1</h4>
+  
+  <p><em>Lek litt rundt med de forskjellige egenskapene og verdiene i eksemplet over -
+  klarer du å få den til å bli rød, hvit, og blå?</em></p>
+  
+  <ul>
+    <li>Merk: <code class="language-plaintext highlighter-rouge">color</code> endrer fargen på <em>teksten</em>, mens <code class="language-plaintext highlighter-rouge">background</code> endrer fargen på
+  bakgrunnen</li>
+  </ul>
+</article>
 
 ---
 
@@ -142,13 +146,17 @@ en klasse bruker `.`-tegnet (punktum)
 
 ---
 
-#### Oppgave 2 {#oppgave-2}
-
-_Definer flere klasser, og bruk de på flere forskjellige elementer_
-
-- Du angir hvilken klasse et element skal ha ved å bruke `class`-attributten:
-  `<div class="jeg-er-en-klasse">`
-- Hva skjer om du bruker flere klasser på samme element?
+<article class="oppgave">
+  <h4 id="oppgave-2">Oppgave 2</h4>
+  
+  <p><em>Definer flere klasser, og bruk de på flere forskjellige elementer</em></p>
+  
+  <ul>
+    <li>Du angir hvilken klasse et element skal ha ved å bruke <code class="language-plaintext highlighter-rouge">class</code>-attributten:
+  <code class="language-plaintext highlighter-rouge">&lt;div class="jeg-er-en-klasse"&gt;</code></li>
+    <li>Hva skjer om du bruker flere klasser på samme element?</li>
+  </ul>
+</article>
 
 ---
 
@@ -183,11 +191,13 @@ table {
 
 ---
 
-#### Oppgave 3 {#oppgave-3}
-
-_Lag en nettside (eller bruk det du lagde på oppgave 4 og 5 fra HTML-delen) der
-du bruker denne element-selektoren for å gjøre knappene og tekstfeltene litt
-penere_
+<article class="oppgave">
+  <h4 id="oppgave-3">Oppgave 3</h4>
+  
+  <p><em>Lag en nettside (eller bruk det du lagde på oppgave 4 og 5 fra HTML-delen) der
+  du bruker denne element-selektoren for å gjøre knappene og tekstfeltene litt
+  penere</em></p>
+</article>
 
 ---
 
@@ -269,19 +279,24 @@ står selvfølgelig fritt til å teste ut det andre metodene 🎨
 
 ---
 
-#### Oppgave 4 {#oppgave-4}
-
-_Bruk det du har lært om klasser og farger til å lage en regnbue 🌈_
-
-- Dersom du lager tomme elementer, uten innhold, kan det være lurt å gi de en
-  størrelse, slik at de er synlige:
-
-```
-width: 40px;
-height: 40px;
-```
-
-- I neste del skal vi gå litt nærmere inn på hvordan størrelser fungerer
+<article class="oppgave">
+  <h4 id="oppgave-4">Oppgave 4</h4>
+  
+  <p><em>Bruk det du har lært om klasser og farger til å lage en regnbue 🌈</em></p>
+  
+  <ul>
+    <li>Dersom du lager tomme elementer, uten innhold, kan det være lurt å gi de en
+  størrelse, slik at de er synlige:</li>
+  </ul>
+  
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>width: 40px;
+  height: 40px;
+  </code></pre></div></div>
+  
+  <ul>
+    <li>I neste del skal vi gå litt nærmere inn på hvordan størrelser fungerer</li>
+  </ul>
+</article>
 
 ---
 
@@ -311,11 +326,13 @@ nettleser-vinduet (på engelsk "viewport") og kan ha en verdi fra 0 til 100.
 
 ---
 
-#### Oppgave 5 {#oppgave-5}
-
-_Lag noen elementer og klasser, og bruk alle disse forskjellige
-størrelse-enhetene (`px`, `em`, `rem`, `vw`, `vw`, og `%`) - klarer du å få alle
-til å bli like store?_
+<article class="oppgave">
+  <h4 id="oppgave-5">Oppgave 5</h4>
+  
+  <p><em>Lag noen elementer og klasser, og bruk alle disse forskjellige
+  størrelse-enhetene (<code class="language-plaintext highlighter-rouge">px</code>, <code class="language-plaintext highlighter-rouge">em</code>, <code class="language-plaintext highlighter-rouge">rem</code>, <code class="language-plaintext highlighter-rouge">vw</code>, <code class="language-plaintext highlighter-rouge">vw</code>, og <code class="language-plaintext highlighter-rouge">%</code>) - klarer du å få alle
+  til å bli like store?</em></p>
+</article>
 
 ---
 
@@ -508,17 +525,31 @@ Eksempelet under viser hvordan ting kan endre seg når man endrer på forskjelli
 
 ---
 
-#### Oppgave 6 {#oppgave-6}
-
-_Se om du klarer å få det indre elementet (blå boks med klassen `child`) til å
-bli like stort som det ytre elementet ved å endre egenskapene som påvirker høyde
-og bredde_
-
-- Vi har satt `box-sizing: border-box;` for alle elementer i eksempelet
-- Trykk på knappen som sier "Sjekk størrelsen til barnet" etter du har gjort en
-  endring for å se hvilke størrelse "barnet" faktisk har (høyde x bredde)
-
-{% include codepen-embed.html slug="ExJNxqG" height="700" %}
+<article class="oppgave">
+  <h4 id="oppgave-6">Oppgave 6</h4>
+  
+  <p><em>Se om du klarer å få det indre elementet (blå boks med klassen <code class="language-plaintext highlighter-rouge">child</code>) til å
+  bli like stort som det ytre elementet ved å endre egenskapene som påvirker høyde
+  og bredde</em></p>
+  
+  <ul>
+    <li>Vi har satt <code class="language-plaintext highlighter-rouge">box-sizing: border-box;</code> for alle elementer i eksempelet</li>
+    <li>Trykk på knappen som sier “Sjekk størrelsen til barnet” etter du har gjort en
+  endring for å se hvilke størrelse “barnet” faktisk har (høyde x bredde)</li>
+  </ul>
+  
+  <p class="codepen" data-height="700" data-default-tab="css,result" data-slug-hash="ExJNxqG" data-editable="true" data-preview="false" data-user="eivindmjelde" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+    <!-- <span
+      >See the Pen
+      <a href="https://codepen.io/eivindmjelde/pen/ExJNxqG">ID-selektor</a> by
+      Eivind Mjelde (<a href="https://codepen.io/eivindmjelde">@eivindmjelde</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span
+    > -->
+  </p>
+  <script async="" src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  
+  <p><br /></p>
+</article>
 
 ---
 
@@ -602,6 +633,17 @@ _Ved å bruke enten flexbox eller grid (opp til deg), lag et sjakkbrett_
 
 - Bonus om sjakkbrettet også har koordinatene på siden (A, B, C, etc; 1, 2,
   3...)
+
+<article class="oppgave">
+  <h4 id="oppgave-7">Oppgave 7</h4>
+  
+  <p><em>Ved å bruke enten flexbox eller grid (opp til deg), lag et sjakkbrett</em></p>
+  
+  <ul>
+    <li>Bonus om sjakkbrettet også har koordinatene på siden (A, B, C, etc; 1, 2,
+  3…)</li>
+  </ul>
+</article>
 
 ---
 
