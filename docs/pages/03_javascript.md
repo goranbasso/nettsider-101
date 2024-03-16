@@ -15,7 +15,22 @@ dette fort blir veldig vanskelig - det tar lang tid å mestre programmering, og 
 
 Vi har forsøkt å holde dette så enkelt som mulig, men det er veldig lett for å havne ned i kaninhull her.
 
-### Programmering 101
+### Innhold
+- [Programmering 101](#programmering-101)
+- [Oppgave 1](#oppgave-1)
+- [JavaScript](#javascript)
+- [Oppgave 2](#oppgave-2)
+- [HTML + JavaScript](#html-javascript)
+- [Oppgave 3](#oppgave-3)
+- [Fleip eller fakta?](#fleipfakta)
+- [Oppgave 4](#oppgave-4)
+- [Oppgave 5](#oppgave-5)
+- [CSS + JavaScript](#css-javascript)
+- [Oppgave 6](#oppgave-6)
+- [Veien videre](#veien-videre)
+- [Oppsummering](#oppsummering)
+
+### Programmering 101 {#programmering-101}
 
 Et programmeringsspråk er noe som lar oss beskrive en rekke operasjoner til en datamaskin, nesten som en kake-oppskrift.
 
@@ -67,7 +82,7 @@ Vi kunne gjort: `console.log(100 + 200);` direkte i konsollen, for eksempel.
 
 ---
 
-#### Oppgave 1
+#### Oppgave 1 {#oppgave-1}
 
 _Bruk konsollen til å gjøre noen enkle utregninger_
 
@@ -77,7 +92,7 @@ _Bruk konsollen til å gjøre noen enkle utregninger_
 
 ---
 
-### JavaScript
+### JavaScript {#javascript}
 
 JavaScript er et språk som er laget for å bruke sammen med nettsider, og alle nettlesere støtter JavaScript.
 Man kan bruke JavaScript til å gjøre ting direkte på HTML-siden vår, slik at vi får en litt mer interessant nettside.
@@ -123,7 +138,7 @@ Denne koden vil kjøre med en gang vi åpner nettsiden vår (eller når vi refre
 
 ---
 
-#### Oppgave 2
+#### Oppgave 2 {#oppgave-2}
 
 _Print noe til konsollen når man går inn på nettsiden_
 
@@ -131,7 +146,7 @@ _Print noe til konsollen når man går inn på nettsiden_
 
 ---
 
-### HTML + JavaScript
+### HTML + JavaScript {#html-javascript}
 
 Nå skal vi se litt på hvordan vi kan gjøre endringer på nettsiden vår med JavaScript.
 Det vi egentlig gjør nå, er å legge til innhold i HTML-elementer.
@@ -229,7 +244,7 @@ Vi definerte en funksjon, `printPlayerNames()`, og så sa vi at når knappen bli
 
 ---
 
-#### Oppgave 3
+#### Oppgave 3 {#oppgave-3}
 
 _Lag et `<input>`-element hvor man kan skrive inn noe, og vis denne verdien en helt annen plass på nettsiden når man trykker på en knapp_
 
@@ -238,7 +253,7 @@ _Lag et `<input>`-element hvor man kan skrive inn noe, og vis denne verdien en h
 
 ---
 
-### Fleip eller fakta?
+### Fleip eller fakta? {#fleipfakta}
 
 Når vi skriver kode, ønsker vi ofte å gjøre en ting dersom noe er sant, og noe helt annet dersom det ikke er sant.
 
@@ -328,7 +343,7 @@ Ved hjelp av denne, kan vi sette opp logikk for å styre hva koden vår skal gj�
 
 ---
 
-#### Oppgave 4
+#### Oppgave 4 {#oppgave-4}
 
 _Ved å bruke det du har lært hittil, kan du lage en enkel nettside der man prøver å gjette hvilket tall datamaskinen tenker på?_
 
@@ -354,7 +369,7 @@ console.log("rullet en terning, og fikk: " + diceRoll);
 Merk at siden vi i `rollDice()`-funksjonen sier `return randomNumber`, så betyr det at funksjonen gir fra seg verdien som er i
 `randomNumber`, og på den måten kan vi ta verdien rett i en variabel (`diceRoll` i eksemplet over).
 
-#### Oppgave 5
+#### Oppgave 5 {#oppgave-5}
 
 _Ved å bruke det du har lært hittil, kan du lage en enkel nettside hvor man kan spille stein-saks-papir mot datamaskinen?_
 
@@ -376,7 +391,7 @@ function rockPaperOrScissors() {
 
 ---
 
-### CSS + JavaScript
+### CSS + JavaScript {#css-javascript}
 
 Vi kan også bruke JavaScript til å endre på CSS, slik at utseendet også kan endre seg basert på hva brukeren gjør.
 
@@ -508,7 +523,7 @@ Merk at det er lett å havne i en uendelig løkke her! Hvorfor skjer det?
 
 ---
 
-#### Oppgave 6
+#### Oppgave 6 {#oppgave-6}
 
 Det finnes en spesiell type man kan sette på `<input>`: `<input type="color">`. Dette gjør `<input>`-elementet om til en farge-velger.
 
@@ -519,7 +534,7 @@ _Skriv om koden over, slik at man selv kan velge nøyaktig hvilken farge `div`-e
 
 ---
 
-### Veien videre
+### Veien videre {#veien-videre}
 
 Om du har kommet så langt, gratulerer! Dette er ikke lett, og det er veldig mye å lære seg, men så er også mulighetene enorme.
 
@@ -532,6 +547,7 @@ Noen forslag på mer avanserte oppgaver du kan bryne deg på, som ikke er i noen
   - Tabellen bør ha flere kolonner, med forskjellige verdier inni seg
 - Lag en **profil-side**, der brukere kan legge inn tekst om seg selv, bilder, og velge mellom flere farger
 - **Hva som helst**, så lenge du bruker både HTML, CSS, og JavaScript sammen
+- Finn en måte å hoste en nettside på, slik at den blir tilgjengelig for andre
 
 Et eksempel på en nettside som bruker HTML, CSS, og JavaScript sammen:
 [Tic-tac-toe]({{site.baseurl}}/eksempler/tic-tac-toe)
@@ -539,7 +555,7 @@ Et eksempel på en nettside som bruker HTML, CSS, og JavaScript sammen:
 Denne kan utvides, eller endres, eller brukes som eksempel.
 Den har for eksempel veldig simplistisk CSS - kan vi få den til å se bedre ut?
 
-### Oppsummering
+### Oppsummering {#oppsummering}
 
 - JavaScript er et programmeringsspråk, som man kan bruke sammen med HTML og CSS, for å lage nettsider med oppførsel
 - Programmering er et dypt og bredt tema, men mulighetene er enorme

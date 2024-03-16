@@ -6,13 +6,33 @@ permalink: /html/
 
 ## Skjellettet til en nettside
 
-HTML (HyperText Markup Language), selve fundamentet til en nettside.
+HTML (HyperText Markup Language) er den fundamentale byggeklossen til en nettside.
 
 Det er i HTML at vi definerer strukturen som nettsiden skal ha, og det meste av det tekstlige innholdet.
 
-### Elementer
+I denne delen skal vi gå gjennom noen av de viktigste HTML-konseptene, og komme i gang med noen praktiske oppgaver 
+for å få øvd litt på hvordan man lager en nettside.
 
-#### Tekst-elementer
+### Innhold
+- [Elementer](#elementer)
+- [Tekst-elementer](#tekst-elementer)
+- [Oppgave 1](#oppgave-1)
+- [Avanserte elementer](#avanserte-elementer)
+- [Lister](#lister)
+- [Oppgave 2](#oppgave-2)
+- [Tabeller](#tabeller)
+- [Oppgave 3](#oppgave-3)
+- [Input](#input)
+- [Oppgave 4](#oppgave-4)
+- [Attributter](#attributter)
+- [Oppgave 5](#oppgave-5)
+- [Oppgave 6](#oppgave-6)
+- [Oppgave 7](#oppgave-7)
+- [Oppsummering](#oppsummering)
+
+### Elementer {#elementer}
+
+#### Tekst-elementer {#tekst-elementer}
 
 HTML består av et hierarki av ulike tagger (eller elementer), som ser slik ut:
 
@@ -98,7 +118,7 @@ Brukes slik:
 
 ---
 
-#### Oppgave 1
+#### Oppgave 1 {#oppgave-1}
 
 _Lag en enkel nettside, med disse forskjellige elementene over, som har noe tekstlig innhold og en tittel._
 
@@ -109,9 +129,9 @@ _Lag en enkel nettside, med disse forskjellige elementene over, som har noe teks
 
 ---
 
-### Avanserte elementer
+### Avanserte elementer {#avanserte-elementer}
 
-#### Lister
+#### Lister {#lister}
 
 Det finnes en hel bråte av elementer man kan legge til nettsiden sin, og noen har mer avansert funksjonalitet enn å bare endre på
 hvordan teksten ser ut.
@@ -141,7 +161,7 @@ Vi kan også ha nummererte lister, dersom rekkefølgen er viktig, med `<ol>`- og
 
 ---
 
-#### Oppgave 2
+#### Oppgave 2 {#oppgave-2}
 
 _Lag noen lister på nettsiden din, både med og uten nummerering._
 
@@ -149,7 +169,7 @@ _Lag noen lister på nettsiden din, både med og uten nummerering._
 
 ---
 
-#### Tabeller
+#### Tabeller {#tabeller}
 
 Tabeller er ofte nyttige for å strukturere og presentere innholdet, spesielt om man har data som kan representeres med rader og kolonner.
 
@@ -224,7 +244,7 @@ vi legger den til her for å gjøre tabellen vår litt mer synlig.
 
 ---
 
-#### Oppgave 3
+#### Oppgave 3 {#oppgave-3}
 
 _Legg til en enkel tabell på nettsiden din_
 
@@ -232,7 +252,7 @@ _Legg til en enkel tabell på nettsiden din_
 
 ---
 
-#### Input
+#### Input {#input}
 
 Nettsider lar oss gjerne gjøre litt mer enn å bare se på innhold, for eksempel kan man legge til en kommentar, eller logge inn.
 Da finnes det litt mer avanserte elementer vi kan benytte for å la brukeren gjøre slike handlinger.
@@ -277,7 +297,7 @@ Vi kan bruke `<button>`-elementet for å lage knapper på nettsiden vår:
 
 ---
 
-#### Oppgave 4
+#### Oppgave 4 {#oppgave-4}
 
 _Legg til noen tekstfelt og knapper til nettsiden din_
 
@@ -285,7 +305,7 @@ _Legg til noen tekstfelt og knapper til nettsiden din_
 
 ---
 
-### Attributter
+### Attributter {#attributter}
 
 Et veldig viktig konsept som vi må være innom, og som blir veldig relevant for CSS- og JavaScript-delene,
 er dette med attributter på HTML-elementene våre.
@@ -346,7 +366,7 @@ for eksempel om vi ønsker å begrense hvor mange tegn brukeren skal kunne skriv
 
 ---
 
-#### Oppgave 5
+#### Oppgave 5 {#oppgave-5}
 
 _Bruk attributter for å legge til noen mer avanserte `<input>`-elementer på nettsiden din_
 
@@ -374,7 +394,7 @@ I denne workshopen skal vi bare fokusere på én enkel nettside, uten lenker til
 
 ---
 
-#### Oppgave 6
+#### Oppgave 6 {#oppgave-6}
 
 _Legg til noen lenker til forskjellige nettsider inne på siden din_
 
@@ -411,7 +431,7 @@ Dette forutsetter at i samme mappe (lokalt på din maskin), så ligger det en bi
 
 ---
 
-#### Oppgave 7
+#### Oppgave 7 {#oppgave-7}
 
 _Legg til et bilde på nettsiden din_
 
@@ -421,7 +441,7 @@ _Legg til et bilde på nettsiden din_
 
 ---
 
-### Oppsummering
+### Oppsummering {#oppsummering}
 
 - HTML-sider har en struktur, som består av tagger og tekst
 - Disse taggene angir hvilket type innhold og hvilken struktur siden skal ha

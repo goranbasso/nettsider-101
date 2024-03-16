@@ -48,7 +48,29 @@ du lage din egen kopi av eksempelet på Codepen, hvor du står enda mer fritt ti
 å eksperimentere. Merk at du er nødt til å opprette en bruker på Codepen dersom
 du har lyst til å lagre endringer du gjør
 
-### Anatomien til en CSS-regel
+### Innhold
+- [Anatomien til en CSS-regel](#css-regel)
+- [Hva er en "selektor"](#selektor)
+- [Oppgave 1](#oppgave-1)
+- [Oppgave 2](#oppgave-2)
+- [Oppgave 3](#oppgave-3)
+- [Hva er en "egenskap"](#egenskap)
+- [Hva er en verdi](#verdi)
+- [Farge](#farge)
+- [Oppgave 4](#oppgave-4)
+- [Størrelse](#storrelse)
+- [Oppgave 5](#oppgave-5)
+- [Nøkkelord](#nokkelord)
+- [Selektorer, spesifisitet og "kaskaden"](#kaskaden)
+- [Boksmodellen, flyt og layout](#boks-flyt-layout)
+- [Boksmodellen](#boksmodellen)
+- [Oppgave 6](#oppgave-6)
+- [Flexbox](#flexbox)
+- [Grid](#grid)
+- [Oppgave 7](#oppgave-7)
+- [Oppsummering](#oppsummering)
+
+### Anatomien til en CSS-regel {#css-regel}
 
 I sin enkleste form består en CSS-regel av 3 ting: en **selektor** (hva skal vi
 stile), en **egenskap** (hvilket "utseende" ønsker vi å endre) og en **verdi**
@@ -93,7 +115,7 @@ en HTML-side.
 
 ---
 
-#### Oppgave 1
+#### Oppgave 1 {#oppgave-1}
 
 _Lek litt rundt med de forskjellige egenskapene og verdiene i eksemplet over -
 klarer du å få den til å bli rød, hvit, og blå?_
@@ -120,7 +142,7 @@ en klasse bruker `.`-tegnet (punktum)
 
 ---
 
-#### Oppgave 2
+#### Oppgave 2 {#oppgave-2}
 
 _Definer flere klasser, og bruk de på flere forskjellige elementer_
 
@@ -161,7 +183,7 @@ table {
 
 ---
 
-#### Oppgave 3
+#### Oppgave 3 {#oppgave-3}
 
 _Lag en nettside (eller bruk det du lagde på oppgave 4 og 5 fra HTML-delen) der
 du bruker denne element-selektoren for å gjøre knappene og tekstfeltene litt
@@ -169,7 +191,7 @@ penere_
 
 ---
 
-#### Hva er en "egenskap"
+#### Hva er en "egenskap" {#egenskap}
 
 En egenskap er "utseendet" vi ønsker å endre på elementet (eller elementene) vi
 har valgt med selektoren. På engelsk kaller man dette en "CSS property". Vi har
@@ -207,7 +229,7 @@ faktisk skal gjelde for en HTML-side.
 Senere skal vi se nærmere på hvordan nettleseren gjør denne prioriteringen, og
 hva vi kan gjøre for å kontrollere prosessen.
 
-#### Hva er en "verdi"
+#### Hva er en "verdi" {#verdi}
 
 En verdi tilhører en egenskap. Hvilken verdier man kan bruke avhenger av
 egenskapen. De fleste verdier er enten av typen "farge", "størrelse",
@@ -223,7 +245,7 @@ ingen effekt fordi vi gir en "størrelses-verdi" til en egenskap som forventer e
 
 <br /> -->
 
-##### Farge
+##### Farge {#farge}
 
 Farger er oftest representert i heksadesimale verdier (hex), RGB (andel **R**ød,
 **G**rønn og **B**lå), HSL (**H**ue, **S**aturation, **L**ightness) eller
@@ -247,7 +269,7 @@ står selvfølgelig fritt til å teste ut det andre metodene 🎨
 
 ---
 
-#### Oppgave 4
+#### Oppgave 4 {#oppgave-4}
 
 _Bruk det du har lært om klasser og farger til å lage en regnbue 🌈_
 
@@ -263,7 +285,7 @@ height: 40px;
 
 ---
 
-##### Størrelse
+##### Størrelse {#storrelse}
 
 Størrelser oppgis som regel i absolutte eller relative verdier.
 
@@ -289,7 +311,7 @@ nettleser-vinduet (på engelsk "viewport") og kan ha en verdi fra 0 til 100.
 
 ---
 
-#### Oppgave 5
+#### Oppgave 5 {#oppgave-5}
 
 _Lag noen elementer og klasser, og bruk alle disse forskjellige
 størrelse-enhetene (`px`, `em`, `rem`, `vw`, `vw`, og `%`) - klarer du å få alle
@@ -297,7 +319,7 @@ til å bli like store?_
 
 ---
 
-##### Nøkkelord
+##### Nøkkelord {#nokkelord}
 
 Nøkkelord er kanskje den største og mest komplekse gruppen med verdier i CSS.
 Heldigvis trenger man ikke å kunne så veldig mange av dem for å komme i gang.
@@ -337,7 +359,7 @@ være:
 
 {% include codepen-embed.html slug="eYodKyz" default_tab="result" height="800" %}
 
-### Selektorer, spesifisitet og "kaskaden"
+### Selektorer, spesifisitet og "kaskaden"  {#kaskaden}
 
 Som nevnt i [avsnittet om selektorer](#selektor), så har CSS-regler ulik
 spesifisitet avhengig av hvilken selektor som brukes. Jo høyere spesifisitet en
@@ -402,13 +424,13 @@ p.kjeks.potet[title] {
 }
 ```
 
-### Boksmodellen, flyt og layout
+### Boksmodellen, flyt og layout {#boks-flyt-layout}
 
 En ting man ofte jobber mye med i CSS er størrelsen på elementer og hvordan de
 posisjonerer seg i forhold til hverandre. I denne seksjonen skal vi snakke om
 noen av konseptene som er nyttige å forstå for å kontrollere dette.
 
-#### Boksmodellen
+#### Boksmodellen {#boksmodellen}
 
 Hvert element i HTML kan sees på som en boks. Denne boksen har forskjellige
 CSS-egenskaper som sammen utgjør størrelsen til boksen. I CSS blir dette ofte
@@ -486,7 +508,7 @@ Eksempelet under viser hvordan ting kan endre seg når man endrer på forskjelli
 
 ---
 
-#### Oppgave 6
+#### Oppgave 6 {#oppgave-6}
 
 _Se om du klarer å få det indre elementet (blå boks med klassen `child`) til å
 bli like stort som det ytre elementet ved å endre egenskapene som påvirker høyde
@@ -500,7 +522,7 @@ og bredde_
 
 ---
 
-#### Flexbox
+#### Flexbox {#flexbox}
 
 Layouten til en nettside blir gjerne litt mer spennende om man posisjonerer
 elementene på en bedre måte enn å bare ha de nedover, som en liste. Dette kan vi
@@ -525,7 +547,7 @@ rekkefølgen blir reversert, og at den ytterste (`<div class="outer-box">`) har
 De andre trenger vi ikke definere `flex-direction: row` på, siden det er det som
 er default.
 
-#### Grid
+#### Grid {#grid}
 
 Et annet verktøy vi har for å endre på layouten er grid, som ser for seg at
 elementene ligger som en tabell, med rader og kolonner.
@@ -574,7 +596,7 @@ verdt å ta en kjapp titt på:
 
 ---
 
-#### Oppgave 7
+#### Oppgave 7 {#oppgave-7}
 
 _Ved å bruke enten flexbox eller grid (opp til deg), lag et sjakkbrett_
 
@@ -583,7 +605,7 @@ _Ved å bruke enten flexbox eller grid (opp til deg), lag et sjakkbrett_
 
 ---
 
-### Oppsummering
+### Oppsummering {#oppsummering}
 
 - CSS lar oss stile elementer på nettsiden vår, slik at de ser litt bedre ut
 - Man setter regler for CSS-en ved å angi en selektor, en egenskap, og en verdi
