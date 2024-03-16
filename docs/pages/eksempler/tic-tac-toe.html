@@ -199,11 +199,18 @@
       // hjelpefunksjon som uthenter en spillers navn
       function getPlayerName(player) {
         if (player === "X") {
-          if (xName == null || xName.length === 0) {
+          if (xPlayerName == null || xPlayerName.length === 0) {
             return "X";
+          } else {
+            return xPlayerName;
           }
         }
         if (player === "O") {
+          if (oPlayerName == null || oPlayerName.length === 0) {
+            return "O";
+          } else {
+            return oPlayerName;
+          }
         }
       }
 
