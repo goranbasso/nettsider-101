@@ -6,10 +6,22 @@ permalink: /css/
 
 ## Klærne til en nettside
 
+CSS, eller Cascading Style Sheets, er teknologien som lar oss gi nettsidene våre
+et unikt utseende ved å la oss endre på tekster, former og farger. Uten CSS
+ville det å surfe nettet vært en ganske kjedelig affære.
+
 Visste du at CSS ble
 [oppfunnet av en nordmann](https://medium.com/net-magazine/interview-with-h%C3%A5kon-wium-lie-f3328aeca8ed)?!
 
-Og for å sitere oppfinneren selv:
+Håkon Wium Lie var en av pionere innen utviklingen av moderne nettlesere. Da de
+første nettleserne ble lansert, fantes det ingen måte å endre hvordan
+HTML-elementer så ut. Man måtte bare akseptere det nettleseren gav. Det var ofte
+litt grått og trist. Håkon Lie innså at dersom folk flest skulle ha interesse av
+å lese innholdet som fantes på nettet, måtte de kunne designes på en måte som
+var appelerende for folk flest, slik man hadde gjort med trykte medier som
+aviser, blader og bøker.
+
+For å sitere oppfinneren selv:
 
 > “If we hadn’t developed CSS, we could have ended up with the web being a giant
 > fax machine”
@@ -17,7 +29,7 @@ Og for å sitere oppfinneren selv:
 Et begrep som ofte brukes når vi snakker om CSS er å "stile elementer", altså å
 gi elementer et utseende. "Elementer" er byggeblokkene i HTML, som vi beskrev i
 forrige seksjon av kurset. Vi kommer til å bruke begrepet "å stile" i de
-kommende seksjonene.
+kommende seksjonene når vi snakker om å endre utseendet til HTML med CSS.
 
 Stilene vi definerer for en nettside kan være i 1 eller flere "stilark". Et
 stilark er en fil med endingen `.css` som følger språkkonvensjonene for CSS.
@@ -83,8 +95,11 @@ en HTML-side.
 
 #### Oppgave 1
 
-_Lek litt rundt med de forskjellige egenskapene og verdiene i eksemplet over - klarer du å få den til å bli rød, hvit, og blå?_
-- Merk: `color` endrer fargen på _teksten_, mens `background` endrer fargen på bakgrunnen
+_Lek litt rundt med de forskjellige egenskapene og verdiene i eksemplet over -
+klarer du å få den til å bli rød, hvit, og blå?_
+
+- Merk: `color` endrer fargen på _teksten_, mens `background` endrer fargen på
+  bakgrunnen
 
 ---
 
@@ -108,7 +123,9 @@ en klasse bruker `.`-tegnet (punktum)
 #### Oppgave 2
 
 _Definer flere klasser, og bruk de på flere forskjellige elementer_
-- Du angir hvilken klasse et element skal ha ved å bruke `class`-attributten: `<div class="jeg-er-en-klasse">`
+
+- Du angir hvilken klasse et element skal ha ved å bruke `class`-attributten:
+  `<div class="jeg-er-en-klasse">`
 - Hva skjer om du bruker flere klasser på samme element?
 
 ---
@@ -146,8 +163,9 @@ table {
 
 #### Oppgave 3
 
-_Lag en nettside (eller bruk det du lagde på oppgave 4 og 5 fra HTML-delen) der du bruker denne element-selektoren for å
-gjøre knappene og tekstfeltene litt penere_
+_Lag en nettside (eller bruk det du lagde på oppgave 4 og 5 fra HTML-delen) der
+du bruker denne element-selektoren for å gjøre knappene og tekstfeltene litt
+penere_
 
 ---
 
@@ -232,11 +250,15 @@ står selvfølgelig fritt til å teste ut det andre metodene 🎨
 #### Oppgave 4
 
 _Bruk det du har lært om klasser og farger til å lage en regnbue 🌈_
-- Dersom du lager tomme elementer, uten innhold, kan det være lurt å gi de en størrelse, slik at de er synlige:
+
+- Dersom du lager tomme elementer, uten innhold, kan det være lurt å gi de en
+  størrelse, slik at de er synlige:
+
 ```
 width: 40px;
 height: 40px;
 ```
+
 - I neste del skal vi gå litt nærmere inn på hvordan størrelser fungerer
 
 ---
@@ -269,8 +291,9 @@ nettleser-vinduet (på engelsk "viewport") og kan ha en verdi fra 0 til 100.
 
 #### Oppgave 5
 
-_Lag noen elementer og klasser, og bruk alle disse forskjellige størrelse-enhetene (`px`, `em`, `rem`, `vw`, `vw`, og `%`) - 
-klarer du å få alle til å bli like store?_
+_Lag noen elementer og klasser, og bruk alle disse forskjellige
+størrelse-enhetene (`px`, `em`, `rem`, `vw`, `vw`, og `%`) - klarer du å få alle
+til å bli like store?_
 
 ---
 
@@ -479,38 +502,51 @@ og bredde_
 
 #### Flexbox
 
-Layouten til en nettside blir gjerne litt mer spennende om man posisjonerer elementene på en bedre måte
-enn å bare ha de nedover, som en liste. Dette kan vi oppnå ved å bruke flexbox eller grid.
+Layouten til en nettside blir gjerne litt mer spennende om man posisjonerer
+elementene på en bedre måte enn å bare ha de nedover, som en liste. Dette kan vi
+oppnå ved å bruke flexbox eller grid.
 
-Med flexbox, så definerer vi elementene våre som bokser og sier hvor de skal være i forhold til hverandre, ved å se for oss at
-vi har en retning (enten vertikalt eller horisontalt), og så hvor stor plass de indre elementene skal ta i forhold til hverandre.
+Med flexbox, så definerer vi elementene våre som bokser og sier hvor de skal
+være i forhold til hverandre, ved å se for oss at vi har en retning (enten
+vertikalt eller horisontalt), og så hvor stor plass de indre elementene skal ta
+i forhold til hverandre.
 
 {% include codepen-embed.html slug="yLrVbqN" height="500" %}
 
-Først setter vi denne `display`-egenskapen til `flex`, og så bruker vi `justify-content` til å fortelle hvor mye
-avstand det skal være mellom de forskjellige elementene i boksen. I eksemplet over ser man hvordan `space-between`, `space-around`,
-`space-evenly`, og `center` oppfører seg annerledes.
+Først setter vi denne `display`-egenskapen til `flex`, og så bruker vi
+`justify-content` til å fortelle hvor mye avstand det skal være mellom de
+forskjellige elementene i boksen. I eksemplet over ser man hvordan
+`space-between`, `space-around`, `space-evenly`, og `center` oppfører seg
+annerledes.
 
-Legg merke til `flex-direction: row-reverse` på den grønne raden - som gjør at rekkefølgen blir reversert, 
-og at den ytterste (`<div class="outer-box">`) har `flex-direction: column`, som sier at retningen vår er vertikal, som en søyle.
-De andre trenger vi ikke definere `flex-direction: row` på, siden det er det som er default.
+Legg merke til `flex-direction: row-reverse` på den grønne raden - som gjør at
+rekkefølgen blir reversert, og at den ytterste (`<div class="outer-box">`) har
+`flex-direction: column`, som sier at retningen vår er vertikal, som en søyle.
+De andre trenger vi ikke definere `flex-direction: row` på, siden det er det som
+er default.
 
 #### Grid
 
-Et annet verktøy vi har for å endre på layouten er grid, som ser for seg at elementene ligger som en tabell, med rader og kolonner.
+Et annet verktøy vi har for å endre på layouten er grid, som ser for seg at
+elementene ligger som en tabell, med rader og kolonner.
 
 {% include codepen-embed.html slug="XWQNgJR" height="500" %}
 
-I eksemplet over, så ser vi hvordan vi først har definert en wrapper-boks, der vi sier `display: grid`, og forteller at vi 
-ønsker å ha 3 kolonner, med denne `grid-template-columns: repeat(3, 1fr)`, og at radene skal ha en størrelse på 50 piksler, 
-med `grid-auto-rows: minmax(50px, auto)`, som gjør at det automatisk har blitt 4 rader.
+I eksemplet over, så ser vi hvordan vi først har definert en wrapper-boks, der
+vi sier `display: grid`, og forteller at vi ønsker å ha 3 kolonner, med denne
+`grid-template-columns: repeat(3, 1fr)`, og at radene skal ha en størrelse på 50
+piksler, med `grid-auto-rows: minmax(50px, auto)`, som gjør at det automatisk
+har blitt 4 rader.
 
-I tillegg har vi sagt at det skal være et gap på 10 piksler mellom hver celle (`gap: 10px`).
+I tillegg har vi sagt at det skal være et gap på 10 piksler mellom hver celle
+(`gap: 10px`).
 
-Deretter definerer vi egne klasser for hver celle, og vi ser hvordan vi kan endre hvor stor plass de tar i tabellen, 
-ved å sette verdier for disse `grid-column` og `grid-cell`.
+Deretter definerer vi egne klasser for hver celle, og vi ser hvordan vi kan
+endre hvor stor plass de tar i tabellen, ved å sette verdier for disse
+`grid-column` og `grid-cell`.
 
 For eksempel, for celle E, har vi sagt at den skal være i kolonne 2, og rad 4:
+
 ```css
 .cell-e {
   grid-column: 2;
@@ -518,18 +554,22 @@ For eksempel, for celle E, har vi sagt at den skal være i kolonne 2, og rad 4:
 }
 ```
 
-Mens for celle B, har vi sagt at den skal strekke seg over kolonnene 2 og 3, og over radene 1 og 2:
+Mens for celle B, har vi sagt at den skal strekke seg over kolonnene 2 og 3, og
+over radene 1 og 2:
+
 ```css
 .cell-b {
   grid-column: 2 / 4;
   grid-row: 1 / 3;
 }
 ```
-Med denne `2 / 4`-verdien, sier vi egentlig 'fra og med 2, til (men ikke med) 4'.
-Merk også at celle A og celle B overlapper i første rad på kolonne 2.
 
-Dette er bare et enkelt eksempel på hvordan du kan bruke grid, men det er mye mer som er mulig å få til.
-Denne nettsiden har en grei oversikt, og kan være verdt å ta en kjapp titt på: 
+Med denne `2 / 4`-verdien, sier vi egentlig 'fra og med 2, til (men ikke med)
+4'. Merk også at celle A og celle B overlapper i første rad på kolonne 2.
+
+Dette er bare et enkelt eksempel på hvordan du kan bruke grid, men det er mye
+mer som er mulig å få til. Denne nettsiden har en grei oversikt, og kan være
+verdt å ta en kjapp titt på:
 [CSS Tricks: Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ---
@@ -537,15 +577,18 @@ Denne nettsiden har en grei oversikt, og kan være verdt å ta en kjapp titt på
 #### Oppgave 7
 
 _Ved å bruke enten flexbox eller grid (opp til deg), lag et sjakkbrett_
-- Bonus om sjakkbrettet også har koordinatene på siden (A, B, C, etc; 1, 2, 3...)
+
+- Bonus om sjakkbrettet også har koordinatene på siden (A, B, C, etc; 1, 2,
+  3...)
 
 ---
 
 ### Oppsummering
 
 - CSS lar oss stile elementer på nettsiden vår, slik at de ser litt bedre ut
-- Man setter regler for CSS-en ved å angi en selektor, en egenskap, og en verdi 
-- Man kan sette flere regler på samme element - spesifisiteten avgjør hvilken som blir gjeldende, dersom det er en konflikt
+- Man setter regler for CSS-en ved å angi en selektor, en egenskap, og en verdi
+- Man kan sette flere regler på samme element - spesifisiteten avgjør hvilken
+  som blir gjeldende, dersom det er en konflikt
 - Boksmodellen deler elementer inn i deler: margin, border, padding, og content
 
 ## Ressurser
