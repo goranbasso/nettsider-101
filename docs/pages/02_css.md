@@ -6,8 +6,6 @@ permalink: /css/
 
 ## Klærne til en nettside
 
-Her trenger jeg en intro...
-
 Visste du at CSS ble
 [oppfunnet av en nordmann](https://medium.com/net-magazine/interview-with-h%C3%A5kon-wium-lie-f3328aeca8ed)?!
 
@@ -542,6 +540,13 @@ _Ved å bruke enten flexbox eller grid (opp til deg), lag et sjakkbrett_
 - Bonus om sjakkbrettet også har koordinatene på siden (A, B, C, etc; 1, 2, 3...)
 
 ---
+
+### Oppsummering
+
+- CSS lar oss stile elementer på nettsiden vår, slik at de ser litt bedre ut
+- Man setter regler for CSS-en ved å angi en selektor, en egenskap, og en verdi 
+- Man kan sette flere regler på samme element - spesifisiteten avgjør hvilken som blir gjeldende, dersom det er en konflikt
+- Boksmodellen deler elementer inn i deler: margin, border, padding, og content
 
 ## Ressurser
 
