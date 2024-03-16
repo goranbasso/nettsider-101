@@ -34,6 +34,10 @@ Merk at vi må alltid lukke taggene våre. Det er god kutyme å bruke indenterin
 slik at det er lett å se hvordan strukturen er lagt opp. Ofte kan vi gjøre store endringer med mellomrom og linjeskift,
 uten at det påvirker hvordan nettsiden ender opp med å se ut - så man bruker dette for å gjøre HTML-filen så lett å lese som mulig.
 
+Ofte får vi hjelp fra verktøyene våre (notepad, CodePen, Visual Studio Code, etc) til å lage denne indenteringen automatisk, 
+så vi slipper å legge inn alle mellomrom selv. Det er vanlig å bruke 2 eller 4 mellomrom (eventuelt tab-karakteren), 
+men er helt opp til deg hvordan du ønsker å gjøre det.
+
 Vi bør alltid starte HTML-dokumentet vårt med en `<html>`-tag, som omfatter hele siden:
 
 ```html
@@ -54,7 +58,7 @@ Eksempel:
     <title>Min fantastiske nettside</title>
   </head>
   <body>
-    Her er den kjempekulen nettsiden min.
+    Her er den kjempekule nettsiden min.
     <div>Her er noe kult innhold, i en div.</div>
   </body>
 </html>
@@ -189,7 +193,7 @@ De er litt mer finurlige, men defineres slik:
 Et eksempel med litt innhold:
 
 ```html
-<table>
+<table border="1">
   <thead>
     <tr>
       <th>Film</th>
@@ -214,6 +218,9 @@ Et eksempel med litt innhold:
 ```
 
 Dette blir fort veldig avansert, så det er viktig at man bruker indentering, for å gjøre det så lett-leselig som mulig.
+
+Merk denne `border="1"`-greia vi la til - dette er en attributt, som vi skal snakke litt nærmere om seinere i workshopen,
+vi legger den til her for å gjøre tabellen vår litt mer synlig.
 
 ---
 

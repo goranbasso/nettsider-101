@@ -47,7 +47,7 @@ let sum = a + b; // er lik '300'
 
 a = b; // nå har 'a' samme verdi som 'b': '200' (vi overskriver den opprinnelige verdien)
 console.log(sum); // vil printe '300' i konsollen
-sum = a + b; // vil nå være lik '400'
+sum = a + b;      // 'sum' vil nå ha verdien '400'
 console.log(sum); // printer nå '400' i konsollen
 ```
 
@@ -263,18 +263,18 @@ Eller en kombinasjon:
 
 ```javascript
 console.log(10 == 10); // true
-console.log(10 == 9); // false
-console.log(10 != 9); // true
-console.log(10 > 0); // true
-console.log(10 < 9); // false
-console.log(9 < 9); // false
-console.log(9 <= 9); // true
+console.log(10 == 9);  // false
+console.log(10 != 9);  // true
+console.log(10 > 0);   // true
+console.log(10 < 9);   // false
+console.log(9 < 9);    // false
+console.log(9 <= 9);   // true
 ```
 
 Man kan også bruke er-lik (`==`) på tekst:
 
 ```javascript
-console.log("hei" == "hei"); // true
+console.log("hei" == "hei");   // true
 console.log("hei" == "hallo"); // false
 console.log("hei" != "hallo"); // true
 ```
@@ -283,10 +283,10 @@ Merk, det finnes også en trippel-er-lik (`===`), som er litt strengere, og fung
 de er av akkurat samme _type_ (tall kontra tekst):
 
 ```javascript
-console.log("10" == 10); // true
-console.log("10" === 10); // false
+console.log("10" == 10);    // true
+console.log("10" === 10);   // false
 console.log("10" === "10"); // true
-console.log(10 === 10); // true
+console.log(10 === 10);     // true
 ```
 
 I denne workshopen begrenser vi oss til dobbelt-er-lik `==`, bare fordi det er enklere - men det ansett som dårlig skikk å bruke `==`,
