@@ -81,6 +81,15 @@ en HTML-side.
 
 {% include codepen-embed.html slug="VwNKPbO" %}
 
+---
+
+#### Oppgave 1
+
+_Lek litt rundt med de forskjellige egenskapene og verdiene i eksemplet over - klarer du å få den til å bli rød, hvit, og blå?_
+- Merk: `color` endrer fargen på _teksten_, mens `background` endrer fargen på bakgrunnen
+
+---
+
 Det at en ID alltid er unik er en sannhet med modifikasjoner. Reglene for HTML
 sier at en ID skal være unik for hver side, men nettleserne tolker både CSS og
 HTML på en veldig tilgivende måte. Selv om man gjør en feil, prøver nettleseren
@@ -95,6 +104,16 @@ nemlig `class`.
 en klasse bruker `.`-tegnet (punktum)
 
 {% include codepen-embed.html slug="oNOzWXw" %}
+
+---
+
+#### Oppgave 2
+
+_Definer flere klasser, og bruk de på flere forskjellige elementer_
+- Du angir hvilken klasse et element skal ha ved å bruke `class`-attributten: `<div class="jeg-er-en-klasse">`
+- Hva skjer om du bruker flere klasser på samme element?
+
+---
 
 På samme nivå av spesifisitet som klasse-selektoren, har vi også
 tilstands-selektoren og attributt-selektoren. Tilstands-selektoren er aktiv når
@@ -124,6 +143,15 @@ table {
   /* Regelen gjelder for alle <table>-elementer (tabeller) */
 }
 ```
+
+---
+
+#### Oppgave 3
+
+_Lag en nettside (eller bruk det du lagde på oppgave 4 og 5 fra HTML-delen) der du bruker denne element-selektoren for å
+gjøre knappene og tekstfeltene litt penere_
+
+---
 
 #### Hva er en "egenskap"
 
@@ -201,6 +229,20 @@ gyldig fargeverdi).
 holder vi oss til kodeord ("red", "green") og hex-verdier i dette kurset, men du
 står selvfølgelig fritt til å teste ut det andre metodene 🎨
 
+---
+
+#### Oppgave 4
+
+_Bruk det du har lært om klasser og farger til å lage en regnbue 🌈_
+- Dersom du lager tomme elementer, uten innhold, kan det være lurt å gi de en størrelse, slik at de er synlige:
+```
+width: 40px;
+height: 40px;
+```
+- I neste del skal vi gå litt nærmere inn på hvordan størrelser fungerer
+
+---
+
 ##### Størrelse
 
 Størrelser oppgis som regel i absolutte eller relative verdier.
@@ -224,6 +266,15 @@ Blant disse verdiene er prosent, `rem`, `vw`, `vh` mye brukt.
 nettleser-vinduet (på engelsk "viewport") og kan ha en verdi fra 0 til 100.
 `50vw` kan eksempelvis leses som "50% of viewport width", eller på godt norsk
 "halvparten av bredden til nettleservinduet"
+
+---
+
+#### Oppgave 5
+
+_Lag noen elementer og klasser, og bruk alle disse forskjellige størrelse-enhetene (`px`, `em`, `rem`, `vw`, `vw`, og `%`) - 
+klarer du å få alle til å bli like store?_
+
+---
 
 ##### Nøkkelord
 
