@@ -367,17 +367,17 @@ Ved hjelp av denne, kan vi sette opp logikk for 책 styre hva koden v책r skal gj�
     <li>En enkel hjelpefunksjon, som gir et tilfeldig tall mellom 1 og 6 (som 책 rulle en terning):</li>
   </ul>
   
-  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">rollDice</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nx">randomNumber</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">// litt hokus pokus</span>
-    <span class="k">return</span> <span class="nx">randomNumber</span><span class="p">;</span>
-  <span class="p">}</span>
-  </code></pre></div></div>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">rollDice</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">randomNumber</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">6</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">// litt hokus pokus</span>
+  <span class="k">return</span> <span class="nx">randomNumber</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
   
   <p>Eksempel p책 hvordan du bruker denne funksjonen:</p>
   
-  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">diceRoll</span> <span class="o">=</span> <span class="nx">rollDice</span><span class="p">();</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">rullet en terning, og fikk: </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">diceRoll</span><span class="p">);</span>
-  </code></pre></div></div>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">diceRoll</span> <span class="o">=</span> <span class="nx">rollDice</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">rullet en terning, og fikk: </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">diceRoll</span><span class="p">);</span>
+</code></pre></div></div>
   
   <p>Merk at siden vi i <code class="language-plaintext highlighter-rouge">rollDice()</code>-funksjonen sier <code class="language-plaintext highlighter-rouge">return randomNumber</code>, s책 betyr det at funksjonen gir fra seg verdien som er i
   <code class="language-plaintext highlighter-rouge">randomNumber</code>, og p책 den m책ten kan vi ta verdien rett i en variabel (<code class="language-plaintext highlighter-rouge">diceRoll</code> i eksemplet over).</p>
@@ -393,17 +393,17 @@ Ved hjelp av denne, kan vi sette opp logikk for 책 styre hva koden v책r skal gj�
     <li>En enkel hjelpefunksjon, s책nn at datamaskinen tilfeldig velger stein, saks, eller papir:</li>
   </ul>
   
-  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">rockPaperOrScissors</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nx">randomNumber</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span> <span class="o">%</span> <span class="mi">3</span><span class="p">);</span> <span class="c1">// litt hokus pokus</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">randomNumber</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="dl">"</span><span class="s2">stein</span><span class="dl">"</span><span class="p">;</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">randomNumber</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="dl">"</span><span class="s2">saks</span><span class="dl">"</span><span class="p">;</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="dl">"</span><span class="s2">papir</span><span class="dl">"</span><span class="p">;</span>
-    <span class="p">}</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">rockPaperOrScissors</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">randomNumber</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span> <span class="o">%</span> <span class="mi">3</span><span class="p">);</span> <span class="c1">// litt hokus pokus</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">randomNumber</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="dl">"</span><span class="s2">stein</span><span class="dl">"</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">randomNumber</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="dl">"</span><span class="s2">saks</span><span class="dl">"</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="dl">"</span><span class="s2">papir</span><span class="dl">"</span><span class="p">;</span>
   <span class="p">}</span>
-  </code></pre></div></div>
+<span class="p">}</span>
+</code></pre></div></div>
 </article>
 
 ---
@@ -452,11 +452,11 @@ Men her er det veldig mye som skjer, og en del nye konsepter - s책 la oss ta det
 **F첩rste linje:**
 
 ```javascript
-function changeColor() {
+function changeColor(color) {
 ```
 
 P책 denne linjen definerer vi v책r funksjon, `changeColor()`, men i tillegg, s책 sier vi at den tar et parameter, en verdi som
-man kan angi n책r man bruker den.
+man kan angi n책r man bruker den. Denne parameteren har vi gitt navnet `color`.
 Det er derfor vi i HTML-en sier:
 
 ```html
