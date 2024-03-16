@@ -343,7 +343,7 @@ CSS-egenskaper som sammen utgjør størrelsen til boksen. I CSS blir dette ofte
 omtalt som boksmodellen (box model).
 
 <!-- <p class="center-content"> -->
-  <img src="/assets/img/boxmodel.png" alt="Bildet viser boksmodellen i css" />
+  <img src="{{ site.baseurl }}/assets/img/boxmodel.png" alt="Bildet viser boksmodellen i css" />
 <!-- </p> -->
 
 <aside>
@@ -395,7 +395,7 @@ Merkelig nok er standarden for alle nettlesere å sette
 dersom man får en pakke i posten, så er størrelsen på pakken kun det som er inni
 pakken. Og som vi vet, stemmer dette sjeldent.
 
-<img src="/assets/img/bigbox.png" alt="Stor eske, lite innhold" style="max-width: 500px" />
+<img src="{{site.baseurl}}/assets/img/bigbox.png" alt="Stor eske, lite innhold" style="max-width: 500px" />
 
 Det er derfor vanlig at man i begynnelsen av stilarket setter
 
@@ -410,7 +410,7 @@ For endre `box-sizing` for alle elementer på nettsiden.
 Eksempelet under viser hvordan ting kan endre seg når man endrer på forskjellige
 `box-sizing`-verdier.
 
-{% include codepen-embed.html slug="BaEQWWR" height="900" default_tab="result" %}
+{% include codepen-embed.html slug="BaEQWWR" height="810" default_tab="result" %}
 
 ---
 
