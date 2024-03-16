@@ -465,7 +465,7 @@ Eksempelet under viser hvordan ting kan endre seg når man endrer på forskjelli
 
 ---
 
-#### Oppgave
+#### Oppgave 6
 
 _Se om du klarer å få det indre elementet (blå boks med klassen `child`) til å
 bli like stort som det ytre elementet ved å endre egenskapene som påvirker høyde
@@ -479,13 +479,72 @@ og bredde_
 
 ---
 
-- Position?
-- Float?
-- Flexbox?
-- Grid?
+#### Flexbox
+
+Layouten til en nettside blir gjerne litt mer spennende om man posisjonerer elementene på en bedre måte
+enn å bare ha de nedover, som en liste. Dette kan vi oppnå ved å bruke flexbox eller grid.
+
+Med flexbox, så definerer vi elementene våre som bokser og sier hvor de skal være i forhold til hverandre, ved å se for oss at
+vi har en retning (enten vertikalt eller horisontalt), og så hvor stor plass de indre elementene skal ta i forhold til hverandre.
+
+{% include codepen-embed.html slug="yLrVbqN" height="500" %}
+
+Først setter vi denne `display`-egenskapen til `flex`, og så bruker vi `justify-content` til å fortelle hvor mye
+avstand det skal være mellom de forskjellige elementene i boksen. I eksemplet over ser man hvordan `space-between`, `space-around`,
+`space-evenly`, og `center` oppfører seg annerledes.
+
+Legg merke til `flex-direction: row-reverse` på den grønne raden - som gjør at rekkefølgen blir reversert, 
+og at den ytterste (`<div class="outer-box">`) har `flex-direction: column`, som sier at retningen vår er vertikal, som en søyle.
+De andre trenger vi ikke definere `flex-direction: row` på, siden det er det som er default.
+
+#### Grid
+
+Et annet verktøy vi har for å endre på layouten er grid, som ser for seg at elementene ligger som en tabell, med rader og kolonner.
+
+{% include codepen-embed.html slug="XWQNgJR" height="500" %}
+
+I eksemplet over, så ser vi hvordan vi først har definert en wrapper-boks, der vi sier `display: grid`, og forteller at vi 
+ønsker å ha 3 kolonner, med denne `grid-template-columns: repeat(3, 1fr)`, og at radene skal ha en størrelse på 50 piksler, 
+med `grid-auto-rows: minmax(50px, auto)`, som gjør at det automatisk har blitt 4 rader.
+
+I tillegg har vi sagt at det skal være et gap på 10 piksler mellom hver celle (`gap: 10px`).
+
+Deretter definerer vi egne klasser for hver celle, og vi ser hvordan vi kan endre hvor stor plass de tar i tabellen, 
+ved å sette verdier for disse `grid-column` og `grid-cell`.
+
+For eksempel, for celle E, har vi sagt at den skal være i kolonne 2, og rad 4:
+```css
+.cell-e {
+  grid-column: 2;
+  grid-row: 4;
+}
+```
+
+Mens for celle B, har vi sagt at den skal strekke seg over kolonnene 2 og 3, og over radene 1 og 2:
+```css
+.cell-b {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+```
+Med denne `2 / 4`-verdien, sier vi egentlig 'fra og med 2, til (men ikke med) 4'.
+Merk også at celle A og celle B overlapper i første rad på kolonne 2.
+
+Dette er bare et enkelt eksempel på hvordan du kan bruke grid, men det er mye mer som er mulig å få til.
+Denne nettsiden har en grei oversikt, og kan være verdt å ta en kjapp titt på: 
+[CSS Tricks: Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+---
+
+#### Oppgave 7
+
+_Ved å bruke enten flexbox eller grid (opp til deg), lag et sjakkbrett_
+- Bonus om sjakkbrettet også har koordinatene på siden (A, B, C, etc; 1, 2, 3...)
+
+---
 
 ## Ressurser
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+[Mozilla CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 {% include next-section.html url="javascript" %}
