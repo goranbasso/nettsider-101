@@ -58,7 +58,7 @@ hvordan nettsiden ser ut mens man jobber på den.
   - Visual Studio Code, IntelliJ IDEA, NetBeans, Atom, etc
 - Nettleser-baserte verktøy (vi anbefaler dette til denne workshopen):
   - [Codepen](https://codepen.io/)
+  - [Github Codespaces](https://github.com/codespaces)
   - [CodeSandbox](https://codesandbox.io/)
-  - [StackBlitz](https://stackblitz.com/)
 
 {% include next-section.html url="html" %}
