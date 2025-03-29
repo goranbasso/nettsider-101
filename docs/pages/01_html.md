@@ -463,7 +463,7 @@ Dette forutsetter at i samme mappe (lokalt på din maskin), så ligger det en bi
     <ul>
       <li>Du kan finne et bilde på nett, og enten legge til adressen direkte til bildet - men det er ikke alltid man får lov</li>
       <li>Kan også laste ned et bilde lokalt, og vise til stien direkte (men forutsetter at man ikke bruker CodePen)</li>
-      <li>Det finnes noen sider som lar deg hente slikte bilder gratis: <a href="https://picsum.photos">https://picsum.photos</a>, <a href="https://placekitten.com/">https://placekitten.com/</a></li>
+      <li>Det finnes noen sider som lar deg hente slike bilder gratis: <a href="https://picsum.photos">https://picsum.photos</a>, <a href="https://placekitten.com/">https://placekitten.com/</a></li>
     </ul>
 </article>
 
