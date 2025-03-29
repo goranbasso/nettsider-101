@@ -53,9 +53,9 @@ hvordan nettsiden ser ut mens man jobber på den.
 - Nettlesere:
   - Chrome, Firefox, Safari, Edge, etc
 - Tekstredigering:
-  - Notepad, Notepad++, Sublime Text, Atom, etc
+  - Notepad, Notepad++, Sublime Text, Vim/Neovim, Emacs etc
 - IDE'er:
-  - Visual Studio Code, IntelliJ IDEA, NetBeans, Atom, etc
+  - Visual Studio Code, IntelliJ IDEA, Webstorm, NetBeans etc
 - Nettleser-baserte verktøy (vi anbefaler dette til denne workshopen):
   - [Codepen](https://codepen.io/)
   - [Github Codespaces](https://github.com/codespaces)
